@@ -1,3 +1,5 @@
+
+in microfrontend
 ```
 window.renderCats = (containerId, history) => {
   ReactDOM.render(
@@ -12,10 +14,10 @@ window.unmountCats = containerId => {
 
 ```
 
-in microfrontends
 
 
-in microfrontend
+
+in rootapp
 
 ```
 import React, { useEffect } from "react";
