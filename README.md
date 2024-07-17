@@ -1,4 +1,5 @@
-```window.renderCats = (containerId, history) => {
+```
+window.renderCats = (containerId, history) => {
   ReactDOM.render(
     <App history={history} />,
     document.getElementById(containerId),
@@ -7,14 +8,17 @@
 
 window.unmountCats = containerId => {
   ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
-};```
+};
+
+```
 
 in microfrontends
 
 
 in microfrontend
 
-```import React, { useEffect } from "react";
+```
+import React, { useEffect } from "react";
 
 function MicroFrontend({ name, host, history }) {
   useEffect(() => {
@@ -60,4 +64,6 @@ MicroFrontend.defaultProps = {
   window,
 };
 
-export default MicroFrontend;```
+export default MicroFrontend;
+
+```
