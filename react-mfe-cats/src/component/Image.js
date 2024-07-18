@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import styles from './image.module.css';
 const Image  = (props) =>{
     const {src,alt,customStyle} = props;
 
@@ -11,7 +11,7 @@ const Image  = (props) =>{
        
     return (
         <>
-    <img src={src} onLoad={handleOnLoad}   style={{display: isLoaded? 'initial' :'none',...customStyle}} alt={alt}/>
+    <img src={src} className={styles.backgroudcolor} onLoad={handleOnLoad}   style={{display: isLoaded? 'initial' :'none',...customStyle}} alt={alt}/>
     {isLoaded ? null : 'loading image'}
     </>)
 }
